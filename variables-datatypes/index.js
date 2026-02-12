@@ -10,15 +10,15 @@ function test(){
 test();
 // reassignment
 // redefinition using var but usally not recommnded
-//-------------------------------------------------//
+//--------------------------------------------------//
 let x = 100;
 console.log(x); // works fine
-//-------------------------------------------------//
+//--------------------------------------------------//
 {
     let y = 200;
 }
 console.log(y); // error
-//--------------------------------------------------//
+//---------------------------------------------------//
 {
     let z = 300;
     console.log(z); // works fine - block scope
@@ -41,3 +41,18 @@ console.log(e); // dynamic typing in js
 const r = 111;
 console.log(r); 
 r = 222; // error - reassignment not allowed
+//--------------------------------------------------//
+
+
+
+//dataTypes 
+// primitive, non-primitive data types
+let marks;
+console.log(typeof(marks)); 
+console.log(marks); 
+// output:- undefined
+
+// Symbol	A unique and primitive identifier
+let s1 = Symbol("my id");
+console.log(typeof(s1));
+// output:- symbol
